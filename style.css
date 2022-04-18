@@ -1,0 +1,58 @@
+h1 {text-align: left;
+}
+#box {
+    height:150px; 
+    width:150px; 
+    background-color:orange; 
+    margin:25px;
+}
+#growBox {
+    height:150%;
+    width:150%;
+    background-color: orange;
+    margin:25px;
+}
+#blueBox {
+    height:150px; 
+    width:150px; 
+    background-color:blue; 
+    margin:25px;
+}
+#fadeBox {
+    height:150px; 
+    width:150px; 
+    background-color:orange;
+    opacity: 0.75; 
+    margin:25px;
+}
+#resetBox {
+    height:150px; 
+    width:150px; 
+    background-color:orange; 
+    margin:25px;
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        }
+    }
+}
+
+#box.blue {
+    background-color: blue;
+}
+
+.grow {
+    transform: scale(1.1);
+}
